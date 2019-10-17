@@ -13,19 +13,14 @@
 * Data was gathered from the [Wikimedia ORES REST API](https://github.com/wikimedia/ores), Wikimedia Foundation and authors Aaron Halfaker, Yuvi Panda, Amir Sarabadani, Justin Du, Adam Wight, available under an MIT License
 API documentation: https://www.mediawiki.org/wiki/ORES and https://ores.wikimedia.org/v3/#!/scoring/get_v3_scores_context_revid_model
 
-Date all data was accessed: 10/13/2019
+Date all data was accessed: 10/16/2019
 
-
-## Data considerations:
-
-* 
-	
 
 ## Data processing:
 
 * In the Politicians by Country dataset, we remove any entries starting with the string "Template:", which are not actual Wikipedia pages
 * We process the population dataset to map each country to its respective region
-* We use the ORES API to obtain article quality data for politician articles, remove entries for which the ORES API query did not return article quality scores
+* We use the ORES API to obtain article quality data for politician articles, and remove entries for which the ORES API query did not return article quality scores
 * Merge together all datasets (populations, articles, article quality, region information and population) for analysis
 
 
